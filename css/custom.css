@@ -1,4 +1,9 @@
 .calcinput {
     background: none;
     border: none;
+    border-bottom: #212121 solid 2px;
+    text-align: center;
+}
+body {
+    background: #fafafa;
 }
