@@ -22,10 +22,10 @@ $(document).ready(function(){
         // Find the magnitude of each vector
         var fMag = pythagorean(x1, y1);
         var sMag = pythagorean(x2, y2);
-        var totalMag = fMag + sMag;
+        var totalMag = fMag * sMag;
 
         // Final calculation for result.
-        var angle = dot / totalMag;
+        var angle = Math.cos(dot / totalMag);
         $('#finalangle').html("<strong>Angle between vectors: </strong>" + angle.toFixed(5));
         return false;
 
